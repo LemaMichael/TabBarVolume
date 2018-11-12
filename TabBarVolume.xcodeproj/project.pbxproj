@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4C65755821990D8F00F8A82B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65755721990D8F00F8A82B /* AppDelegate.swift */; };
-		4C65755A21990D8F00F8A82B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65755921990D8F00F8A82B /* ViewController.swift */; };
+		4C65755A21990D8F00F8A82B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65755921990D8F00F8A82B /* MainTabBarController.swift */; };
 		4C65755F21990D8F00F8A82B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C65755E21990D8F00F8A82B /* Assets.xcassets */; };
 		4C65756221990D8F00F8A82B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C65756021990D8F00F8A82B /* LaunchScreen.storyboard */; };
 		4C65756A21990DF600F8A82B /* TestInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756921990DF600F8A82B /* TestInject.swift */; };
 		4C65756D21990E8000F8A82B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756C21990E8000F8A82B /* Extensions.swift */; };
+		4C65756F219919E500F8A82B /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756E219919E500F8A82B /* BasicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C65755421990D8F00F8A82B /* TabBarVolume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarVolume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C65755721990D8F00F8A82B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C65755921990D8F00F8A82B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C65755921990D8F00F8A82B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4C65755E21990D8F00F8A82B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C65756121990D8F00F8A82B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C65756321990D8F00F8A82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C65756921990DF600F8A82B /* TestInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInject.swift; sourceTree = "<group>"; };
 		4C65756C21990E8000F8A82B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C65756E219919E500F8A82B /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				4C65755721990D8F00F8A82B /* AppDelegate.swift */,
-				4C65755921990D8F00F8A82B /* ViewController.swift */,
+				4C65755921990D8F00F8A82B /* MainTabBarController.swift */,
+				4C65756E219919E500F8A82B /* BasicViewController.swift */,
 				4C65756921990DF600F8A82B /* TestInject.swift */,
 				4C65755E21990D8F00F8A82B /* Assets.xcassets */,
 				4C65756021990D8F00F8A82B /* LaunchScreen.storyboard */,
@@ -145,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C65755A21990D8F00F8A82B /* ViewController.swift in Sources */,
+				4C65755A21990D8F00F8A82B /* MainTabBarController.swift in Sources */,
+				4C65756F219919E500F8A82B /* BasicViewController.swift in Sources */,
 				4C65755821990D8F00F8A82B /* AppDelegate.swift in Sources */,
 				4C65756A21990DF600F8A82B /* TestInject.swift in Sources */,
 				4C65756D21990E8000F8A82B /* Extensions.swift in Sources */,
