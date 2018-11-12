@@ -24,7 +24,7 @@ class BasicViewController: VideoSplashViewController {
         self.alpha = 0.7
         self.backgroundColor = UIColor.black
         self.contentURL = url
-        self.alwaysRepeat = true
+        self.restartForeground = true
     }
     
     override var prefersStatusBarHidden: Bool {
