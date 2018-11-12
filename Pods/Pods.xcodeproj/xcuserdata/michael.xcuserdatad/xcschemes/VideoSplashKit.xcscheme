@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7229FB03E766D0FE038701C7344B1968"
-               BuildableName = "SubtleVolume.framework"
-               BlueprintName = "SubtleVolume"
+               BlueprintIdentifier = "FD144873282535D305B3313C7F208162"
+               BuildableName = "VideoSplashKit.framework"
+               BlueprintName = "VideoSplashKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7229FB03E766D0FE038701C7344B1968"
-            BuildableName = "SubtleVolume.framework"
-            BlueprintName = "SubtleVolume"
+            BlueprintIdentifier = "FD144873282535D305B3313C7F208162"
+            BuildableName = "VideoSplashKit.framework"
+            BlueprintName = "VideoSplashKit"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

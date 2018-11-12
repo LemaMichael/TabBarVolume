@@ -1,16 +1,20 @@
 PODS:
   - SubtleVolume (1.0.2)
+  - VideoSplashKit (1.2.1)
 
 DEPENDENCIES:
   - SubtleVolume
+  - VideoSplashKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SubtleVolume
+    - VideoSplashKit
 
 SPEC CHECKSUMS:
   SubtleVolume: 88618f8304a0e605d1adca14b95376dcbf9e03ce
+  VideoSplashKit: 9d5670948cfb0be15262d973cedbfd3faecddcad
 
-PODFILE CHECKSUM: a6e83cc7ebae4a1884eccbfa69308f0d3868e658
+PODFILE CHECKSUM: 16d56fa7cb11fd84fd076eee157b82ce55ec35b1
 
 COCOAPODS: 1.5.3

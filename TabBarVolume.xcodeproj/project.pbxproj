@@ -14,6 +14,7 @@
 		4C65756A21990DF600F8A82B /* TestInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756921990DF600F8A82B /* TestInject.swift */; };
 		4C65756D21990E8000F8A82B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756C21990E8000F8A82B /* Extensions.swift */; };
 		4C65756F219919E500F8A82B /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756E219919E500F8A82B /* BasicViewController.swift */; };
+		4CB86101219931FC0069B27E /* Bird.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CB86100219931FC0069B27E /* Bird.mp4 */; };
 		FFFD835C5B1A6D488D375A73 /* Pods_TabBarVolume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BFF5C9892DF2EAFDE0BC35 /* Pods_TabBarVolume.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		4C65756921990DF600F8A82B /* TestInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInject.swift; sourceTree = "<group>"; };
 		4C65756C21990E8000F8A82B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4C65756E219919E500F8A82B /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		4CB86100219931FC0069B27E /* Bird.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bird.mp4; sourceTree = "<group>"; };
 		804660134F8836F1435E5C49 /* Pods-TabBarVolume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarVolume.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarVolume/Pods-TabBarVolume.debug.xcconfig"; sourceTree = "<group>"; };
 		CB5DAAC59E2ADD928DEABA64 /* Pods-TabBarVolume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarVolume.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarVolume/Pods-TabBarVolume.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +49,7 @@
 		4C65754B21990D8F00F8A82B = {
 			isa = PBXGroup;
 			children = (
+				4CB86100219931FC0069B27E /* Bird.mp4 */,
 				4C65755621990D8F00F8A82B /* TabBarVolume */,
 				4C65755521990D8F00F8A82B /* Products */,
 				6CFFC834C6DCEDC62D300284 /* Pods */,
@@ -162,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB86101219931FC0069B27E /* Bird.mp4 in Resources */,
 				4C65756221990D8F00F8A82B /* LaunchScreen.storyboard in Resources */,
 				4C65755F21990D8F00F8A82B /* Assets.xcassets in Resources */,
 			);
@@ -178,10 +182,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TabBarVolume/Pods-TabBarVolume-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SubtleVolume/SubtleVolume.framework",
+				"${BUILT_PRODUCTS_DIR}/VideoSplashKit/VideoSplashKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SubtleVolume.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoSplashKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

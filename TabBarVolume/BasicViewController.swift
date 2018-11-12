@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import VideoSplashKit
 
-class BasicViewController: UIViewController {
+class BasicViewController: VideoSplashViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
+        
+        guard let path = Bundle.main.path(forResource: "Bird", ofType: "mp4") else { return }
+        let url = NSURL.fileURL(withPath: path)
+        self.videoFrame = view.frame
+        self.fillMode = .resizeAspectFill
+        self.alwaysRepeat = true
+        self.sound = true
+        self.alpha = 0.7
+        self.backgroundColor = UIColor.black
+        self.contentURL = url
+        self.alwaysRepeat = true
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
+  
 }

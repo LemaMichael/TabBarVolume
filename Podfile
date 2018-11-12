@@ -7,4 +7,5 @@ target 'TabBarVolume' do
 
   # Pods for TabBarVolume
   pod 'SubtleVolume'
+  pod 'VideoSplashKit'
 end
