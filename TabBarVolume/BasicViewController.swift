@@ -12,7 +12,7 @@ class BasicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red:0.08, green:0.14, blue:0.24, alpha:1.00)
+        view.backgroundColor = .black
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
