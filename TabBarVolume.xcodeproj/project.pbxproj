@@ -14,9 +14,11 @@
 		4C65756A21990DF600F8A82B /* TestInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756921990DF600F8A82B /* TestInject.swift */; };
 		4C65756D21990E8000F8A82B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756C21990E8000F8A82B /* Extensions.swift */; };
 		4C65756F219919E500F8A82B /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65756E219919E500F8A82B /* BasicViewController.swift */; };
+		FFFD835C5B1A6D488D375A73 /* Pods_TabBarVolume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BFF5C9892DF2EAFDE0BC35 /* Pods_TabBarVolume.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21BFF5C9892DF2EAFDE0BC35 /* Pods_TabBarVolume.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabBarVolume.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C65755421990D8F00F8A82B /* TabBarVolume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarVolume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C65755721990D8F00F8A82B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C65755921990D8F00F8A82B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		4C65756921990DF600F8A82B /* TestInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInject.swift; sourceTree = "<group>"; };
 		4C65756C21990E8000F8A82B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4C65756E219919E500F8A82B /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		804660134F8836F1435E5C49 /* Pods-TabBarVolume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarVolume.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarVolume/Pods-TabBarVolume.debug.xcconfig"; sourceTree = "<group>"; };
+		CB5DAAC59E2ADD928DEABA64 /* Pods-TabBarVolume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarVolume.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarVolume/Pods-TabBarVolume.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFD835C5B1A6D488D375A73 /* Pods_TabBarVolume.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				4C65755621990D8F00F8A82B /* TabBarVolume */,
 				4C65755521990D8F00F8A82B /* Products */,
+				6CFFC834C6DCEDC62D300284 /* Pods */,
+				953638589DD2DFCA25DA6ADB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +85,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		6CFFC834C6DCEDC62D300284 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				804660134F8836F1435E5C49 /* Pods-TabBarVolume.debug.xcconfig */,
+				CB5DAAC59E2ADD928DEABA64 /* Pods-TabBarVolume.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		953638589DD2DFCA25DA6ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21BFF5C9892DF2EAFDE0BC35 /* Pods_TabBarVolume.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C65756621990D8F00F8A82B /* Build configuration list for PBXNativeTarget "TabBarVolume" */;
 			buildPhases = (
+				8B3222A26E9EB893C21EF13D /* [CP] Check Pods Manifest.lock */,
 				4C65755021990D8F00F8A82B /* Sources */,
 				4C65755121990D8F00F8A82B /* Frameworks */,
 				4C65755221990D8F00F8A82B /* Resources */,
+				6A03E945E6D54DFB8DD29818 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +168,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A03E945E6D54DFB8DD29818 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TabBarVolume/Pods-TabBarVolume-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SubtleVolume/SubtleVolume.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SubtleVolume.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabBarVolume/Pods-TabBarVolume-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B3222A26E9EB893C21EF13D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabBarVolume-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C65755021990D8F00F8A82B /* Sources */ = {
@@ -288,12 +353,13 @@
 		};
 		4C65756721990D8F00F8A82B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804660134F8836F1435E5C49 /* Pods-TabBarVolume.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFNQ54N2S6;
 				INFOPLIST_FILE = TabBarVolume/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,12 +373,13 @@
 		};
 		4C65756821990D8F00F8A82B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5DAAC59E2ADD928DEABA64 /* Pods-TabBarVolume.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFNQ54N2S6;
 				INFOPLIST_FILE = TabBarVolume/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

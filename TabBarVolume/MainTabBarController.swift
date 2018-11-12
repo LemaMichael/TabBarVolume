@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import SubtleVolume
 
 class MainTabBarController: UITabBarController {
     
+    let volume = SubtleVolume(style: .rounded)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        volume.barTintColor = UIColor(red:0.80, green:0.26, blue:0.34, alpha:1.00)
+        volume.barBackgroundColor = .clear
+        
+        volume.animation = .fadeIn
+        volume.padding = CGSize(width: 0, height: 2.0)
+        volume.delegate = self
+        
+        self.view.addSubview(volume)
+        NotificationCenter.default.addObserver(volume, selector: #selector(SubtleVolume.resume), name: UIApplication.didBecomeActiveNotification, object: nil)
         setupViewControllers()
+        
+        volume.anchor(top: tabBar.topAnchor, bottom: nil, left: tabBar.leftAnchor, right: tabBar.rightAnchor, paddingTop: 0, paddingBottom: 0, paddingLeft: 0, paddingRight: 0, width: 0, height: 2)
+
     }
     
     func setupViewControllers() {
@@ -29,8 +45,8 @@ class MainTabBarController: UITabBarController {
         
         tabBar.tintColor = .white
         tabBar.backgroundImage = UIImage()
-        tabBar.shadowImage = UIImage.navBarColor(.white)
-   
+        tabBar.shadowImage = UIImage.navBarColor(UIColor.init(white: 0.5, alpha: 1))
+
         viewControllers = [homeNavController, plusNavController, searchNavController]
     }
     
@@ -43,7 +59,10 @@ class MainTabBarController: UITabBarController {
         NavController.tabBarItem.selectedImage = selectedImage
         return NavController
     }
-    
 }
 
+
+extension MainTabBarController: SubtleVolumeDelegate {
+    
+}
 
